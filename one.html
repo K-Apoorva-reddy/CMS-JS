@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Management System</title>
+  <link rel="stylesheet" href="one.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">CMS</div>
+    <ul>
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#courses">Courses</a></li>
+      <li><a href="#students">Students</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <!-- <li><a href="#login"><i class="fa-solid fa-user"></i> Login</a></li> -->
+       <li><a href="#login" id="loginBtn"><i class="fa-solid fa-user"></i> Login</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- Login Modal -->
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Login</h2>
+    <form id="loginForm">
+      <input type="text" id="username" placeholder="Username" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+    <p id="loginMessage" style="color:rgb(71, 75, 194); margin-top:10px;"></p>
+  </div>
+</div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <!-- <h1>Welcome to Our College</h1> -->
+      <!-- <p>Learn. Grow. Achieve.</p> -->
+      <a href="#about" class="btn btn-primary">About Us</a>
+      <a href="#contact" class="btn btn-secondary">Contact</a>
+    </div>
+    <div class="hero-image">
+      <img src="clg.jpg" alt="College Image">
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="about-text">
+      <h2>About Our College</h2>
+      <p>We offer high-quality education in various fields. Our faculty and infrastructure are designed to provide a great learning experience.</p>
+      <a href="#courses" class="btn btn-outline">Read More</a>
+    </div>
+    <div class="about-image">
+      <img src="admi.jpg" alt="About College">
+    </div>
+  </section>
+
+  <!-- Courses Section -->
+  <section class="courses" id="courses">
+    <h2>Our Courses</h2>
+    <div class="course-cards">
+      <div class="card">
+        <img src="courses.jpg" alt="Course 1">
+        <h3>Choicessss</h3>
+        <p>Learn programming, algorithms, and more.</p>
+      </div>
+      <div class="card">
+        <img src="courses1.jpg" alt="Course 2">
+        <h3>Courses</h3>
+        <p>Master business strategy and leadership skills.</p>
+      </div>
+      <div class="card">
+        <img src="courses2.jpg" alt="Course 3">
+        <h3>AI ML</h3>
+        <p>Explore your creative skills in design and arts.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Students Section -->
+  <section class="students" id="students">
+    <h2>What Our Students Say</h2>
+    <div class="student-testimonials">
+      <div class="testimonial">
+        <img src="students1.jpg" alt="Student 1">
+        <h3>YESHH</h3>
+        <p>This college helped me grow academically and personally. Highly recommended!</p>
+      </div>
+      <div class="testimonial">
+        <img src="students2.jpg" alt="Student 2">
+        <h3>ABHII</h3>
+        <p>Excellent faculty and great learning environment. I love the courses.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section class="blog" id="blog">
+    <h2>Our Blog</h2>
+    <div class="blog-cards">
+      <div class="blog-card">
+        <img src="guide.jpg" alt="Blog 1">
+        <span class="date">17 May</span>
+        <h3>Campus Life Tips</h3>
+        <p>Learn how to make the most of your college experience.</p>
+      </div>
+      <div class="blog-card">
+        <img src="guidence.jpg" alt="Blog 2">
+        <span class="date">8 Feb</span>
+        <h3>Career Guidance</h3>
+        <p>How to prepare for your future career after graduation.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@cmscollege.com | Phone: +91987654346</p>
+    <form>
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 College Management System College. All Rights Reserved.</p>
+  </footer>
+
+  <script src="one.js"></script>
+</body>
+</html>

@@ -1,0 +1,352 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #fdfdfd;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  padding: 15px 50px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar .logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+  background-color: #441fe6;
+  border-radius: 4px;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url('college.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 50px;
+  color: #0a0a0a;
+}
+
+.hero-text h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 12px 25px;
+  margin-right: 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-primary {
+  background-color:  #441fe6;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #fff;
+  color:  #441fe6;
+  border: 1px solid  #441fe6;
+}
+
+.btn-secondary {
+  background-color: #fff;
+  color:  #441fe6;
+}
+
+.btn-secondary:hover {
+  background-color:  #441fe6;
+  color: #fff;
+}
+
+.hero-image img {
+  width: 500px;
+  border-radius: 10px;
+}
+
+/* About Section */
+.about {
+  display: flex;
+  padding: 80px 50px;
+  gap: 50px;
+}
+
+.about-text h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.btn-outline {
+  background: none;
+  border: 2px solid  #441fe6;
+  color:  #441fe6;
+}
+
+.btn-outline:hover {
+  background-color:  #441fe6;
+  color: #fff;
+}
+
+.about-image img {
+  width: 400px;
+  border-radius: 10px;
+}
+
+/* Courses */
+.courses {
+  padding: 80px 50px;
+  text-align: center;
+}
+
+.course-cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.course-cards .card {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.course-cards img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 15px 0 10px;
+}
+
+.card p {
+  padding: 0 15px 15px;
+}
+
+/* Students Section */
+.students {
+  padding: 80px 50px;
+}
+
+.student-testimonials {
+  display: flex;
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.testimonial {
+  display: flex;
+  gap: 15px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 450px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.testimonial img {
+  width: 100px;
+  border-radius: 10px;
+}
+
+.testimonial h3 {
+  margin-bottom: 10px;
+}
+
+/* Blog Section */
+.blog {
+  padding: 80px 50px;
+  text-align: center;
+}
+
+.blog-cards {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.blog-card {
+  position: relative;
+  width: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.blog-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.blog-card .date {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #e30613;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+.blog-card h3 {
+  margin: 15px 0 10px;
+  padding: 0 10px;
+}
+
+.blog-card p {
+  padding: 0 10px 10px;
+}
+
+/* Contact Section */
+.contact {
+  padding: 80px 50px;
+  text-align: center;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact input, .contact textarea {
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  resize: none;
+}
+
+.contact button {
+  padding: 12px;
+  border-radius: 5px;
+  background-color: #3906e3;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background-color: #000;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #000;
+  color: #fff;
+}
+
+
+/* Login Modal Styles */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 200; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto; 
+  padding: 30px;
+  border-radius: 10px;
+  width: 350px;
+  text-align: center;
+  position: relative;
+}
+
+.modal-content input {
+  width: 80%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.modal-content button {
+  padding: 12px 25px;
+  border-radius: 5px;
+  background-color: #5b06e3;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.modal-content button:hover {
+  background-color: #000;
+}
+
+.modal-content .close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #333;
+}
